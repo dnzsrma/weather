@@ -12,7 +12,8 @@ async function fetchWeather(){
     let cityName = response.name
     let feelsLike = response.main.feels_like;
     let weatherDescription = response.weather[0].description;
-    return {cityName,temp,feelsLike,weatherDescription};
+    let weatherId = response.weather[0].id;
+    return {cityName,temp,feelsLike,weatherDescription,weatherId};
 }
 function setCity(name){
     city = name;

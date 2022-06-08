@@ -1,5 +1,5 @@
 import css from "./style.css";
-import { createWeatherCard, ui } from "./ui";
+import { createPage, ui } from "./ui";
 
-createWeatherCard();
+createPage();
 
