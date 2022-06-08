@@ -4,7 +4,7 @@ let city = 'london';
 
 
 async function fetchWeather(){
-    let fetched = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`, {
+    let fetched = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`, {
         mode: 'cors'
       });
     let response = await fetched.json();
