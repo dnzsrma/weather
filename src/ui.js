@@ -8,7 +8,7 @@ function createPage(){
        let card = document.createElement('div');
        card.id = 'card';
        card.innerHTML = `
-       <p> ${response.cityName} </p>
+       <h2> ${response.cityName} </h2>
        <p> Temperature : ${response.temp} </p>
        <p> Feels Like : ${response.feelsLike} </p>
        <p> Weather Desc. : ${response.weatherDescription} </p>
